@@ -1,0 +1,205 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 13:28:56 +0530
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+LoadError (Please install the sqlite3 adapter: `gem install activerecord-sqlite3-adapter` (sqlite3 is not part of the bundle. Add it to Gemfile.)):
+  bundler (1.13.7) lib/bundler/rubygems_integration.rb:336:in `block (2 levels) in replace_gem'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/sqlite3_adapter.rb:3:in `<top (required)>'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `require'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `block in require'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `require'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:50:in `resolve_hash_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:41:in `resolve_string_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:25:in `spec'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:130:in `establish_connection'
+  activerecord (3.2.22.5) lib/active_record/railtie.rb:88:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.22.5) lib/active_support/lazy_load_hooks.rb:36:in `instance_eval'
+  activesupport (3.2.22.5) lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+  activesupport (3.2.22.5) lib/active_support/lazy_load_hooks.rb:43:in `block in run_load_hooks'
+  activesupport (3.2.22.5) lib/active_support/lazy_load_hooks.rb:42:in `each'
+  activesupport (3.2.22.5) lib/active_support/lazy_load_hooks.rb:42:in `run_load_hooks'
+  activerecord (3.2.22.5) lib/active_record/base.rb:720:in `<top (required)>'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `require'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `block in require'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.22.5) lib/active_support/dependencies.rb:251:in `require'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `_run__204106357470160907__call__4074960379621631013__callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22.5) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22.5) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 13:32:24 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 13:36:59 +0530
+Connecting to database specified by database.yml
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `_run__3223320166789084372__call__1570918934989199594__callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22.5) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22.5) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 14:27:29 +0530
+Connecting to database specified by database.yml
+
+Mysql2::Error (Unknown database 'library_development'):
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.22.5) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.22.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `_run__4586018424940689620__call__2486889218110025053__callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22.5) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22.5) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22.5) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22.5) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yeshwant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/yeshwant/.rvm/gems/ruby-2.3.3/gems/actionpack-3.2.22.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 14:30:29 +0530
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-04-10 14:30:58 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (28.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to Books (20180410090323)
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20180410090323')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
