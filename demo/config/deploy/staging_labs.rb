@@ -1,4 +1,5 @@
 #require 'bundler/capistrano'
+#require 'capistrano/bundler'
 #set :application, fetch(:application, 'staging.healthtap.com')
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
@@ -19,7 +20,11 @@ end
 
 namespace :deploy do
 	task :abort_if_migration_needed_on_labs do 
-		run "cd #{release_path} && pwd"
+		run "cd #{release_path}/demo"
+		run "pwd"
+		a = `bundle exec bundle exec rake db:abort_if_pending_migrations`
+		puts a
+		#run "bundle exec rake db:abort_if_pending_migrations"
 	end
 end
 
